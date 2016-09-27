@@ -35,6 +35,13 @@ var Map = function(container, coords, zoom){
 
   };
 
+  this.addListener = function(coords){
+   this.googleMap.panTo(coords);
+   this.googleMap.setCenter(coords);
+   this.addMarker(coords);
+
+ };
+
 
 
 
